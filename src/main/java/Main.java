@@ -19,7 +19,8 @@ public class Main {
         dbProperties.setProperty("ssl", "true");
         dbProperties.setProperty("sslfactory", "org.postgresql.ssl.NonValidatingFactory");
         dbProperties.setProperty("sslmode", "prefer");
-        new LoginData().setLoginData(dbProperties);
+        SecreteData data = new LoginData();
+        data.setLoginData(dbProperties);
         try {
             connection = DriverManager.getConnection(url, dbProperties);
         } catch (SQLException throwables) {
