@@ -1,3 +1,5 @@
-/src/main/java/LoginData
+
 # Project exclude paths
 /target/
+src/main/java/LoginData.java
+.idea
